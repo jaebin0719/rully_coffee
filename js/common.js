@@ -34,3 +34,4 @@ window.addEventListener("load",function(){
     // }, 1000); // 1000밀리초 = 1초
     imageOverlay.classList.add("loaded");
 })
+
