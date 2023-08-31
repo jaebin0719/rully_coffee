@@ -165,19 +165,16 @@ button {
 }
 /* 상단 부분 반응형 */
 @media all and (max-width: 1024px) {
-  .header .logo {
-    
-  }
   .header .logo img {
     position: relative;
-    width: 60%;
-    top: -10px;
-  }
-  .nav ul {
-    align-items: center;
+    width: 70%;
+    top: -5px;
+    left: 20px;
   }
   .nav ul li a {
-    font-size: 1.4em;
+    position: relative;
+    font-size: 1.7em;
+    top: 2px;
   }
   .nav ul li::after {
     bottom: -20px;
@@ -209,7 +206,17 @@ button {
   font-size: 15px;
   color: #fff;
 }
-
+@media all and (max-width:1024px){
+  .footer .container p{
+    font-size: 14px;
+    text-align: center;
+  }
+}
+@media all and (max-width:768px){
+  .footer .container p{
+    font-size: 13px;
+  }
+}
 .sub-banner {
   height: 500px;
   background: url("../images/sub_page_1_img/main.png") no-repeat center / cover;
