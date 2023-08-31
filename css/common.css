@@ -265,7 +265,33 @@ button {
   top: 43px;
   left: 0;
   transition: width 0.5s;
+  border-radius: 3px;
 }
-.sub-banner .container.loaded p::before {
+.sub-banner .container.loaded .sub1-p::before {
   width: 195px;
 }
+.sub-banner .container.loaded .sub3-p::before {
+  width: 210px;
+}
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .sub-banner .container p{
+    font-size: 25px;
+  }
+  .sub-banner .container h2{
+    font-size: 40px;
+  }
+}
+
+@media all and (max-width: 767px){
+  .sub-banner .container p{
+    font-size: 23px;
+  }
+  .sub-banner .container h2{
+    font-size: 35px;
+  }
+}
+
