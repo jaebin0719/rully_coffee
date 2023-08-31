@@ -1,0 +1,415 @@
+/* 소개 section */
+.introduce {
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+.introduce-img {
+  width: 48%;
+}
+.introduce-img img {
+  width: 100%;
+}
+.introduce-txt {
+  width: 48%;
+}
+.introduce-txt h1 {
+  position: relative;
+  display: block;
+  margin-top: 50px;
+  color: #519735;
+  font-size: 48px;
+  font-weight: bold;
+  font-family: "Pretendard-Regular";
+  padding-left: 20px;
+}
+.introduce-txt h1::before {
+  content: "";
+  position: absolute;
+  background-color: #519735;
+  width: 6px;
+  height: 55px;
+  left: 0px;
+  top: 6px;
+}
+.introduce-txt-detail {
+  margin-top: 60px;
+}
+.introduce-txt-detail p {
+  color: #111;
+  padding: 10px 0 0 0;
+  font-size: 23px;
+  font-weight: 450;
+  margin-top: 30px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .introduce {
+    margin-top: 150px;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+  .introduce-txt {
+    width: 100%;
+    max-width: 700px;
+  }
+  .introduce-txt-detail {
+    margin-top: 60px;
+    width: 100%;
+  }
+
+  .introduce-img {
+    width: 100%;
+    max-width: 700px;
+    justify-content: center;
+  }
+}
+/* 모바일 반응형 */
+@media all and (max-width: 767px) {
+  .introduce {
+    margin-top: 150px;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+  .introduce-img {
+    width: 100%;
+    max-width: 500px;
+    justify-content: center;
+  }
+  .introduce-txt {
+    width: 100%;
+    max-width: 500px;
+  }
+  .introduce-txt h1 {
+    font-size: 38px;
+  }
+  .introduce-txt h1::before {
+    height: 41px;
+  }
+  .introduce-txt-detail p {
+    font-size: 20px;
+  }
+}
+
+/* 장비 소개 */
+.equipment {
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.equipment-txt {
+  width: 48%;
+}
+.equipment-title {
+  position: relative;
+  display: block;
+  margin-top: 50px;
+  color: #519735;
+  font-size: 48px;
+  font-weight: bold;
+  font-family: "Pretendard-Regular";
+  padding-left: 20px;
+}
+
+.equipment-title::before {
+  content: "";
+  position: absolute;
+  background-color: #519735;
+  width: 6px;
+  height: 55px;
+  left: 0px;
+  top: 6px;
+}
+
+.equipment-sb {
+  font-family: "Roboto Slab", serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: #333;
+  margin-top: 60px;
+}
+
+.equipment-introduce p {
+  color: #111;
+  padding: 10px 0;
+  font-size: 23px;
+  font-weight: 450;
+  margin-top: 30px;
+}
+
+.equipment-img {
+  width: 48%;
+}
+
+.equipment-img img {
+  width: 100%;
+}
+
+/* 장비소개1 반응형 */
+/* 태블릿 */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .equipment {
+    margin-top: 150px;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+  .equipment-txt {
+    width: 100%;
+    max-width: 700px;
+    order: 2;
+  }
+  .equipment-introduce {
+    margin-top: 60px;
+    width: 100%;
+  }
+
+  .equipment-img {
+    width: 100%;
+    max-width: 700px;
+    order: 1;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .equipment {
+    margin-top: 150px;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .equipment-img {
+    width: 100%;
+    max-width: 500px;
+    order: 1;
+  }
+
+  .equipment-txt {
+    width: 100%;
+    max-width: 500px;
+    order: 2;
+  }
+
+  .equipment-title {
+    font-size: 36px;
+  }
+
+  .equipment-title::before {
+    height: 40px;
+  }
+
+  .equipment-sb {
+    font-size: 25px;
+  }
+
+  .equipment-introduce p {
+    font-size: 18px;
+    width: 100%;
+  }
+}
+
+/* 장비소개 3 */
+
+.equipment-sb span {
+  font-family: "Noto Sans KR", "TTWanjudaedunsancheB", "sans-serif";
+}
+
+/* 장비소개 2 반응형 */
+@media all and (max-width: 767px) {
+}
+
+/* 오시는 길 */
+.guide {
+  position: relative;
+  display: block;
+  margin: 200px 0;
+}
+
+.guide h1 {
+  position: relative;
+  display: block;
+  color: #519735;
+  font-size: 48px;
+  font-weight: bold;
+  font-family: "Pretendard-Regular";
+  padding-left: 20px;
+}
+
+.guide h1::before {
+  content: "";
+  position: absolute;
+  background-color: #519735;
+  width: 6px;
+  height: 55px;
+  left: 0px;
+  top: 6px;
+}
+.guide-img {
+  display: flex;
+  margin-top: 60px;
+}
+
+.main-img {
+  width: 49%;
+  background: url("../images/sub_page_1_img/gomo.png") no-repeat center / cover;
+}
+
+.map-img {
+  width: 49%;
+  margin-left: 20px;
+  background: url("../images/sub_page_1_img/gomomap.png") no-repeat center / cover;
+}
+.main-img::after,
+.map-img::after{
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.guide-txt {
+  margin-top: 35px;
+  display: flex;
+}
+
+.guide-box {
+  position: relative;
+  border: none;
+  width: 440px;
+  height: 200px;
+  margin-left: 40px;
+  box-shadow: 0 1px 10px 0px #d7d7d7;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  /*  */
+}
+
+.guide-box:first-child {
+  margin-left: 0;
+}
+
+.guide-box.selected {
+  background-color: #519735;
+  transition: 0.5s;
+}
+
+.guide-box.selected h6,
+.guide-box.selected p {
+  color: #fff;
+}
+.guide-box.selected h6::before {
+  background-color: #fff;
+}
+
+.guide-box h6 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 30px;
+  color: #333;
+  position: relative;
+  text-align: center;
+  padding: 0 30px 30px 30px;
+}
+
+.guide-box h6::before {
+  content: "";
+  position: absolute;
+  background-color: #999;
+  width: 60%;
+  height: 1px;
+  left: 94.3%;
+  top: 85%;
+  transform: translateX(-123%);
+}
+
+.guide-box p {
+  display: block;
+  font-size: 20px;
+  color: #555;
+  text-align: center;
+  padding: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .guide-box {
+    margin-left: 20px;
+  }
+}
+@media screen and (min-width: 825px) and (max-width: 900px) {
+  .guide-box p {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 824px) {
+  .guide-box p {
+    font-size: 15px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .guide {
+    margin-top: 200px;
+    margin: 30px 0;
+  }
+  .guide-img {
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+  }
+  .map-img {
+    width: 100%; /* 너비를 100%로 설정 */
+    /* 이미지의 원래 비율 유지 */
+    padding-top: 50%; /* 높이를 너비의 25%로 설정 (4:1 비율) */
+    position: relative; /* 내부 요소의 위치 설정을 위해 */
+  }
+  .main-img {
+    width: 100%; 
+    padding-top: 50%; /* 높이를 너비의 25%로 설정 (4:1 비율) */
+    position: relative; /* 내부 요소의 위치 설정을 위해 */
+    margin: 10px auto;
+  }
+  .guide h1 {
+    font-size: 38px;
+  }
+
+  .guide h1::before {
+    height: 41px;
+  }
+
+  .guide-txt {
+    margin-top: 20px;
+  }
+
+  .guide h1 {
+    margin-bottom: 50px;
+  }
+
+  .guide-box {
+    height: 100px;
+    margin-left: 10px;
+  }
+
+  .guide-box p {
+    display: none;
+  }
+
+  .guide-box h6 {
+    font-size: 25px;
+    line-height: 100px;
+    display: block;
+  }
+
+  .guide-box h6::before {
+    display: none;
+  }
+  .guide {
+    margin-top: 150px;
+  }
+
+  .guide-box h6 {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,49 @@
+.sub_event {
+  display: block;
+  position: relative;
+}
+.sub_event img {
+  width: 100%;
+}
+/* 서브 페이지 */
+.sub_title {
+  width: 100%;
+  height: 100px;
+  display: block;
+  position: relative;
+}
+.sub_title > h1 {
+  position: relative;
+  display: block;
+  margin-top: 150px;
+  color: #519735;
+  font-size: 48px;
+  font-weight: bold;
+  font-family: "Pretendard-Regular";
+  padding-left: 20px;
+}
+
+.sub_title > h1::before {
+  content: "";
+  position: absolute;
+  background-color: #519735;
+  width: 6px;
+  height: 55px;
+  left: 0px;
+  top: 6px;
+}
+/* 이벤트 응모 버튼 */
+.sub2_butten {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-family: "Pretendard-Regular";
+  background-color: #519735;
+  padding: 15px 40px;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 700;
+  bottom: 30px;
+}
