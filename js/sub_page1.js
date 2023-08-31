@@ -43,15 +43,16 @@ function updateButtonState(selectedIndex) {
 }
 
 
+//오시는 길==============
+const scrollToGuide = document.querySelector("a[href='#guide']");
 
-  // const scrollToGuide = document.querySelector("a[href='#guide']");
+scrollToGuide.addEventListener("click", function (event) {
+  event.preventDefault(); // 기본 링크 동작 방지
 
-  // scrollToGuide.addEventListener("click", function (event) {
-  //   event.preventDefault(); // 기본 링크 동작 방지
+  const guideSection = document.getElementById("guide");
+  guideSection.scrollIntoView({
+    behavior: "smooth", // 부드러운 스크롤링 사용
+    block: "start", // 섹션의 시작 부분에 맞춰 스크롤링
+  });
+});
 
-  //   const guideSection = document.getElementById("guide");
-  //   guideSection.scrollIntoView({
-  //     behavior: "smooth", // 부드러운 스크롤링 사용
-  //     block: "start", // 섹션의 시작 부분에 맞춰 스크롤링
-  //   });
-  // });

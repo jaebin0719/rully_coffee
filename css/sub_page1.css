@@ -1,3 +1,5 @@
+
+
 /* 소개 section */
 .introduce {
   margin-top: 200px;
@@ -20,7 +22,8 @@
   color: #519735;
   font-size: 48px;
   font-weight: bold;
-  font-family: "Pretendard-Regular";
+  /* font-family: "Pretendard-Regular"; */
+  font-family: "SBAggroB";
   padding-left: 20px;
 }
 .introduce-txt h1::before {
@@ -30,7 +33,8 @@
   width: 6px;
   height: 55px;
   left: 0px;
-  top: 6px;
+  top: 3px;
+  border-radius: 3px;
 }
 .introduce-txt-detail {
   margin-top: 60px;
@@ -108,7 +112,8 @@
   color: #519735;
   font-size: 48px;
   font-weight: bold;
-  font-family: "Pretendard-Regular";
+  /* font-family: "Pretendard-Regular"; */
+  font-family: "SBAggroB";
   padding-left: 20px;
 }
 
@@ -119,7 +124,8 @@
   width: 6px;
   height: 55px;
   left: 0px;
-  top: 6px;
+  top: 3px;
+  border-radius: 3px;
 }
 
 .equipment-sb {
@@ -234,7 +240,8 @@
   color: #519735;
   font-size: 48px;
   font-weight: bold;
-  font-family: "Pretendard-Regular";
+  /* font-family: "Pretendard-Regular"; */
+  font-family: "SBAggroB";
   padding-left: 20px;
 }
 
@@ -245,46 +252,55 @@
   width: 6px;
   height: 55px;
   left: 0px;
-  top: 6px;
+  top: 3px;
+  border-radius: 3px;
 }
+/* ==================수정========================= */
 .guide-img {
   display: flex;
+  height: 450px;
   margin-top: 60px;
+  justify-content: space-between;
 }
 
 .main-img {
+  /* width: 690px; */
   width: 49%;
-  background: url("../images/sub_page_1_img/gomo.png") no-repeat center / cover;
+  /* height: 450px; */
+  background-size: cover;
+  background-image: url("../images/sub_page_1_img/gomo.png");
+  background-position: center;
 }
 
 .map-img {
+  /* width: 690px; */
   width: 49%;
-  margin-left: 20px;
-  background: url("../images/sub_page_1_img/gomomap.png") no-repeat center / cover;
-}
-.main-img::after,
-.map-img::after{
-  content: "";
-  display: block;
-  padding-bottom: 100%;
+  /* height: 450px; */
+  /* margin-left: 20px; */
+  background-size: cover;
+  background-image: url("../images/gomomap.png");
+  background-image: url("../images/sub_page_1_img/gomomap.png");
+  background-position: center;
 }
 
 .guide-txt {
   margin-top: 35px;
   display: flex;
+  justify-content: space-between;
 }
 
 .guide-box {
   position: relative;
   border: none;
-  width: 440px;
-  height: 200px;
-  margin-left: 40px;
+  width: 31%;
+  height: 180px;
+  /* width: 440px;
+  height: 200px; */
+  /* margin-left: 40px; */
   box-shadow: 0 1px 10px 0px #d7d7d7;
   background-color: #fff;
   cursor: pointer;
   border-radius: 5px;
-  /*  */
 }
 
 .guide-box:first-child {
@@ -317,9 +333,11 @@
   content: "";
   position: absolute;
   background-color: #999;
+  /* width: 300px; */
   width: 60%;
   height: 1px;
   left: 94.3%;
+  /* left: 100%; */
   top: 85%;
   transform: translateX(-123%);
 }
@@ -332,11 +350,6 @@
   padding: 10px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .guide-box {
-    margin-left: 20px;
-  }
-}
 @media screen and (min-width: 825px) and (max-width: 900px) {
   .guide-box p {
     font-size: 18px;
@@ -347,26 +360,35 @@
     font-size: 15px;
   }
 }
+/* @media screen and (min-width: 1px) and (max-width: 500px) {
+  .guide-box h6 {
+    font-size: 18px;
+  }
+}  */
 
 @media all and (max-width: 767px) {
   .guide {
-    margin-top: 200px;
-    margin: 30px 0;
+    margin: 150px 0;
   }
   .guide-img {
     flex-wrap: wrap;
     width: 100%;
+    height: auto;
     display: flex;
     margin: 0 auto;
   }
   .map-img {
     width: 100%; /* 너비를 100%로 설정 */
+    height: auto;
     /* 이미지의 원래 비율 유지 */
     padding-top: 50%; /* 높이를 너비의 25%로 설정 (4:1 비율) */
     position: relative; /* 내부 요소의 위치 설정을 위해 */
+    margin: 0 auto;
   }
   .main-img {
-    width: 100%; 
+    width: 100%; /* 너비를 100%로 설정 */
+    height: auto;
+    /* 이미지의 원래 비율 유지 */
     padding-top: 50%; /* 높이를 너비의 25%로 설정 (4:1 비율) */
     position: relative; /* 내부 요소의 위치 설정을 위해 */
     margin: 10px auto;
@@ -397,19 +419,12 @@
   }
 
   .guide-box h6 {
-    font-size: 25px;
+    font-size: 23px;
     line-height: 100px;
     display: block;
   }
 
   .guide-box h6::before {
     display: none;
-  }
-  .guide {
-    margin-top: 150px;
-  }
-
-  .guide-box h6 {
-    font-size: 18px;
   }
 }
