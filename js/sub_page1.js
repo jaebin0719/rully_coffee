@@ -48,7 +48,6 @@ const scrollToGuide = document.querySelector("a[href='#guide']");
 
 scrollToGuide.addEventListener("click", function (event) {
   event.preventDefault(); // 기본 링크 동작 방지
-
   const guideSection = document.getElementById("guide");
   guideSection.scrollIntoView({
     behavior: "smooth", // 부드러운 스크롤링 사용

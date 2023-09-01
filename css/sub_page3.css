@@ -53,8 +53,17 @@
   font-size: 48px;
   font-weight: bold;
   /* font-family: "Pretendard-Regular"; */
-  font-family: 'Pretendard-Regular';
+  font-family: "yg-jalnan";
   padding-left: 20px;
+}
+.best_name::before {
+  content: "";
+  position: absolute;
+  background-color: #519735;
+  width: 6px;
+  height: 55px;
+  left: 0px;
+  top: 6px;
 }
 .best-left {
   position: relative;
