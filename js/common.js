@@ -10,6 +10,7 @@ $(document).ready(function () {
   //     $(".header").css("background", "#fff");
   //     $(".nav ul li a").css("color", "#111");
   //   }
+
   // 사이드메뉴
   // 버튼을 누르면 상단으로 이동
   const $topBtn = document.querySelector(".side-up");
@@ -31,3 +32,4 @@ window.addEventListener("load", function () {
   // }, 1000); // 1000밀리초 = 1초
   imageOverlay.classList.add("loaded");
 });
+
