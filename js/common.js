@@ -24,7 +24,6 @@ $(document).ready(function(){
 
     
   });
-})
 window.addEventListener("load",function(){
   // 페이지 로딩시 메인사진 글자에 밑줄 효과
     const imageOverlay = document.querySelector(".sub-banner .container");
@@ -32,5 +31,6 @@ window.addEventListener("load",function(){
     // setTimeout(function() {
     //   imageOverlay.classList.add("loaded");
     // }, 1000); // 1000밀리초 = 1초
+    imageOverlay.classList.add("loaded");
 })
 
