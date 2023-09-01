@@ -36,7 +36,7 @@
   position: relative;
   display: block;
   top: -40px;
-  left: 35px;
+  left: 150px;
 }
 .visual-txt h1 {
   font-size: 0.9em;
@@ -63,10 +63,20 @@
   text-align: center;
 }
 .visimg {
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
+  position: relative;
+  right: 100px;
+}
+.visevent {
+  width: 400px;
+  height: 400px;
 }
 @media all and (max-width: 1024px) {
+  .visual-txt {
+    position: relative;
+    left: 50px;
+  }
   .visual-txt h1 {
     font-size: 0.6em;
     font-weight: 400;
@@ -86,6 +96,7 @@
     margin-top: 50px;
     width: 150px;
     height: 30px;
+    line-height: 26px;
     border: 1px solid #fff;
     border-radius: 5px;
     font-size: 0.5em;
@@ -94,9 +105,16 @@
   .visimg {
     width: 400px;
     height: 400px;
+    position: relative;
+    right: 0;
   }
 }
 @media all and (max-width: 768px) {
+  .visual-txt {
+    display: block;
+    width: 500px;
+    left: 10px;
+  }
   .visual-txt h1 {
     font-size: 0.5em;
     font-weight: 400;
@@ -109,7 +127,6 @@
   .visual-txt span {
     font-size: 0.5em;
     font-weight: 100;
-    line-height: 0;
   }
   .visual-txt a {
     position: absolute;
@@ -117,21 +134,27 @@
     margin-top: 50px;
     width: 100px;
     height: 30px;
+    line-height: 26px;
     border: 1px solid #fff;
     border-radius: 5px;
-    font-size: 0.5em;
+    font-size: 0.4em;
     text-align: center;
   }
-  .visimg{
-    width: 200px;
-    height: 200px;
+  .visimg {
     position: relative;
-    right: -60px;
+    top: 50px;
+  }
+  .visimg img {
+    width: 400px;
+    height: 300px;
   }
 }
 /* 메뉴 */
-.menu-story{
-  margin-left: 80px;
+.menu-story {
+  height: 800px;
+}
+.menu-story .container {
+  margin-top: 100px;
 }
 .tabs {
   display: flex;
@@ -175,11 +198,11 @@
   display: block;
 }
 .main-title {
+  font-family: "yg-jalnan";
   margin-top: 20vh;
   opacity: 1;
   line-height: 1;
-  color: #000;
-  font-family: "Mark Pro";
+  color: #403e3e;
   font-size: 96px;
   font-weight: 800;
 }
@@ -262,8 +285,9 @@
 .menu-story .main-text {
   display: none;
   margin-bottom: 12px;
-  font-size: 16px;
-  color: #000;
+  font-family: "Pretendard-Regular";
+  font-size: 19px;
+  color: #111;
 }
 .menu-story .tabs {
   width: 320px;
@@ -295,7 +319,7 @@
   content: "";
   display: block;
   width: 100%;
-  margin-top: -8px;
+  margin-top: 0px;
   border-bottom: 3px solid #000;
   line-height: 1;
 }
@@ -376,7 +400,7 @@
   align-items: center;
   justify-content: center;
   white-space: nowrap;
-  background-color: #000;
+  background-color: #111;
 }
 
 @media (max-width: 1024px) {
@@ -405,6 +429,9 @@
     min-width: 1000px;
     height: 395px;
     margin: -135px 0 0 -87px;
+  }
+  #tabpanel-1 {
+    display: block;
   }
   .menu-story .tabpanel .swiper-container {
     height: 392px;
@@ -435,8 +462,12 @@
   }
 }
 @media (max-width: 768px) {
-  .menu-story{
+  .menu-story {
     margin: 0;
+    height: 1000px;
+  }
+  .menu-story .container {
+    margin-top: 0px;
   }
   .swiper-pagination-wrap .swiper-pagination-fraction {
     bottom: 16px;
@@ -479,7 +510,7 @@
   .menu-story #tabpanel-1 .swiper-pagination-wrap {
     position: static;
   }
-  .menu-story #tabpanel-2{
+  .menu-story #tabpanel-2 {
     position: relative;
     left: 0;
     bottom: -13px;
@@ -490,7 +521,7 @@
   .menu-story #tabpanel-2 .swiper-pagination-wrap {
     position: static;
   }
-  .menu-story #tabpanel-3{
+  .menu-story #tabpanel-3 {
     position: relative;
     left: 0;
     bottom: -30px;
@@ -538,11 +569,44 @@
     left: 0 !important;
     background: rgba(0, 0, 0, 0.8);
   }
+  .tabpanel-body {
+    height: 765px;
+  }
+}
+/* 판매 */
+.sell {
+  width: 100%;
+  height: 770px;
+}
+.sell .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sellcate {
+  margin-top: 110px;
+  margin-bottom: 110px;
+  width: 440px;
+  height: 550px;
+  background-color: #f5f0f0;
+}
+.sellcate span{
+  padding-left: 25px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 40px;
+}
+.sell-txt{
+  color: #7d7979;
+}
+.sellcate img{
+  margin-top: 25px;
+  margin-left: 25px;
 }
 /* 이벤트 */
 .event {
   width: 100%;
-  height: 750px;
+  height: 900px;
   margin: 0 auto;
   background-color: #f5f5f5;
 }
@@ -550,16 +614,17 @@
   width: 100%;
   font-size: 96px;
   font-weight: 800;
-  padding: 20px 0 20px 100px;
-  font-family: "Mark Pro";
+  padding: 110px 0 70px 0;
+  font-family: "yg-jalnan";
+  color: #403e3e;
 }
 .event-banner {
   display: flex;
   justify-content: space-between;
   margin: 0 100px 0 100px;
-} 
+}
 @media all and (max-width: 1024px) {
-  .event{
+  .event {
     height: 600px;
   }
   .event-banner img {
@@ -567,11 +632,11 @@
     height: 380px;
   }
 }
-@media all and (max-width:768px){
-  .event{
+@media all and (max-width: 768px) {
+  .event {
     height: 550px;
   }
-  .event-title{
+  .event-title {
     font-size: 60px;
     text-align: center;
     position: relative;
@@ -583,21 +648,22 @@
     width: 350px;
     height: 350px;
   }
-  .event-banner img:first-child{
+  .event-banner img:first-child {
     padding-right: 20px;
-  } 
+  }
 }
 /* 스토어 */
 .store {
   width: 100%;
-  height: 600px;
+  height: 800px;
   margin: 0 auto;
 }
 .store-title {
   font-size: 96px;
   font-weight: 800;
-  padding: 20px 0 20px 100px;
-  font-family: "Mark Pro";
+  padding: 110px 0 70px 0;
+  font-family: "yg-jalnan";
+  color: #403e3e;
 }
 .store-img {
   display: flex;
@@ -718,181 +784,69 @@
   height: 350px;
   cursor: pointer;
 }
-@media all and (max-width:1024px){
-  .store-img .gm{
+@media all and (max-width: 1024px) {
+  .store-img .gm {
     width: 250px;
     height: 250px;
   }
-  .store-img .gm-back{
+  .store-img .gm-back {
     width: 250px;
     height: 250px;
   }
-  .store-img .gc{
+  .store-img .gc {
     width: 250px;
     height: 250px;
   }
-  .store-img .gc-back{
+  .store-img .gc-back {
     width: 250px;
     height: 250px;
   }
-  .store-img .gs{
+  .store-img .gs {
     width: 250px;
     height: 250px;
   }
-  .store-img .gs-back{
+  .store-img .gs-back {
     width: 250px;
     height: 250px;
   }
 }
-@media all and (max-width:768px){
-  .store{
+@media all and (max-width: 768px) {
+  .store {
     height: 500px;
   }
-  .store-title{
+  .store-title {
     font-size: 60px;
     text-align: center;
     position: relative;
     right: 50px;
   }
-  .store-img{
+  .store-img {
     width: 100%;
     position: relative;
     right: 100px;
   }
-  .store-img .gm{
+  .store-img .gm {
     width: 230px;
     height: 230px;
   }
-  .store-img .gm-back{
+  .store-img .gm-back {
     width: 230px;
     height: 230px;
   }
-  .store-img .gc{
+  .store-img .gc {
     width: 230px;
     height: 230px;
   }
-  .store-img .gc-back{
+  .store-img .gc-back {
     width: 230px;
     height: 230px;
   }
-  .store-img .gs{
+  .store-img .gs {
     width: 230px;
     height: 230px;
   }
-  .store-img .gs-back{
+  .store-img .gs-back {
     width: 230px;
     height: 230px;
-  }
-}
-/* 딜리버리 */
-.delivery {
-  width: 100%;
-  height: 500px;
-  background-color: #40ada3;
-  font-size: 12px;
-}
-.delivery .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 100px;
-}
-.deli-txt {
-  position: relative;
-  display: block;
-  color: #fff;
-  top: -20px;
-  font-size: 2.8em;
-}
-.deli-txt h1 {
-  font-size: 0.9em;
-  font-weight: 400;
-  padding-bottom: 20px;
-}
-.deli-txt span {
-  font-size: 1.2em;
-  font-weight: 400;
-}
-.deli-txt p {
-  font-size: 0.8em;
-  font-weight: 100;
-}
-.deli-txt a {
-  position: absolute;
-  display: block;
-  margin-top: 50px;
-  width: 150px;
-  height: 30px;
-  line-height: 25px;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  font-size: 0.6em;
-  text-align: center;
-}
-.deli-img img {
-  width: 450px;
-  height: 450px;
-}
-@media all and (max-width: 1024px) {
-  .deli-txt h1 {
-    font-size: 0.6em;
-    font-weight: 400;
-    padding-bottom: 20px;
-  }
-  .deli-txt p {
-    font-size: 0.9em;
-    font-weight: 400;
-  }
-  .deli-txt span {
-    font-size: 0.6em;
-    font-weight: 100;
-  }
-  .deli-txt a {
-    position: absolute;
-    display: block;
-    margin-top: 50px;
-    width: 150px;
-    height: 30px;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    font-size: 0.5em;
-    text-align: center;
-  }
-  .visimg {
-    width: 400px;
-    height: 400px;
-  }
-}
-@media all and (max-width: 768px) {
-  .delivery{
-    height: 450px;
-  }
-  .deli-txt h1 {
-    font-size: 0.6em;
-    font-weight: 400;
-    padding-bottom: 20px;
-  }
-  .deli-txt p {
-    font-size: 0.9em;
-    font-weight: 400;
-  }
-  .deli-txt span {
-    font-size: 0.6em;
-    font-weight: 100;
-  }
-  .deli-txt a {
-    position: absolute;
-    display: block;
-    margin-top: 50px;
-    width: 150px;
-    height: 30px;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    font-size: 0.5em;
-    text-align: center;
-  }
-  .deli-img img{
-    width: 350px;
-    height: 350px;
   }
 }
