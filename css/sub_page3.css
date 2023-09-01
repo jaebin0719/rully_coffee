@@ -288,28 +288,28 @@
 /* 판매 부분 */
 .all_sale {
   position: relative;
-  display: block;
+
   border-top: 2px solid #b0b0b0;
-}
-.line_1 {
-  position: relative;
   display: flex;
-  /* justify-content: space-evenly; */
+
+  flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 150px;
+  padding-top: 100px;
+
   margin-bottom: 100px;
+  gap: 50px 0;
 }
-.line_2 {
+
+.product {
+  display: block;
   position: relative;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 100px;
+
+  /* border: 2px solid #b0b0b0; */
+  width: calc(90% / 3);
 }
-.line_3 {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 100px;
+.product img {
+  width: 100%;
+
 }
 .product_text {
   display: block;
@@ -367,6 +367,92 @@
 
 .product-explain{
   font-size: 15px;
+  padding: 5px;
+  font-family: "Pretendard-Regular";
+}
+.sale_text_mid {
+  display: block;
+  position: relative;
+  color: #b0b0b0;
+}
+.sale_text_mid::after {
+  content: "";
+  position: absolute;
+  background-color: #b0b0b0;
+  width: 100%;
+  height: 2px;
+  left: 0px;
+  top: -3px;
+  border-radius: 3px;
+}
+.sale_mid_line {
+  margin-top: 10px;
+}
+.product_text h1 {
+  font-size: 18px;
+  font-weight: 700;
+}
+/* 다음 페이지 버튼 */
+.next_button {
+  position: relative;
+  display: block;
+  width: 100%;
+  border-top: 2px solid #b0b0b0;
+}
+.next_number {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.next_number li {
+  font-size: 14px;
+  display: block;
+  position: relative;
+  width: 25px;
+  height: 25px;
+}
+.next_number li:first-child {
+  display: block;
+  position: relative;
+  text-align: center;
+  width: 25px;
+  height: 25px;
+  background-color: #b0b0b0;
+  color: aliceblue;
+}
+.next_number li:hover {
+  display: block;
+  position: relative;
+  text-align: center;
+  width: 25px;
+  height: 25px;
+  background-color: #b0b0b0;
+  color: aliceblue;
+}
+
+/* 반응형 타블렛*/
+@media all and (max-width: 1024px) {
+  .product {
+    width: calc(95% / 2);
+  }
+  .product_text {
+    font-size: 15px;
+  }
+}
+
+/* 반응형 모바일*/
+@media all and (max-width: 767px) {
+  .product {
+    width: calc(95% / 1);
+  }
+  .product_text {
+    font-size: 30px;
+  }
 }
 
 
