@@ -1,15 +1,15 @@
 $(document).ready(function(){
   AOS.init();
-  // 메뉴바 색
-  $(window).scroll(function () {
-    var scroll = $(window).scrollTop();
-    if (scroll > 1) {
-      $(".header").css("background", "rgba(0,0,0,0.7");
-      $(".nav ul li a").css("color", "#fff");
-    } else {
-      $(".header").css("background", "#fff");
-      $(".nav ul li a").css("color", "#000");
-    }
+  // // 메뉴바 색
+  // $(window).scroll(function () {
+  //   var scroll = $(window).scrollTop();
+  //   if (scroll > 1) {
+  //     $(".header").css("background", "rgba(0,0,0,0.7");
+  //     $(".nav ul li a").css("color", "#fff");
+  //   } else {
+  //     $(".header").css("background", "#fff");
+  //     $(".nav ul li a").css("color", "#111");
+  //   }
     // 사이드메뉴
     // 버튼을 누르면 상단으로 이동
     const $topBtn = document.querySelector(".side-up");
@@ -32,6 +32,5 @@ window.addEventListener("load",function(){
     // setTimeout(function() {
     //   imageOverlay.classList.add("loaded");
     // }, 1000); // 1000밀리초 = 1초
-    imageOverlay.classList.add("loaded");
 })
 

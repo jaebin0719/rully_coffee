@@ -102,7 +102,6 @@ $(document).ready(function () {
     var swiperMainStory1;
     var swiperMainStory2;
     var swiperMainStory3;
-
     // Menu Story 스와이프 선언
     swiperMainStory1 = swiperMenuStory("#tabpanel-1");
     $(document)

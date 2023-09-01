@@ -31,7 +31,7 @@ body {
   color: #000;
   font-weight: normal;
   padding-top: 100px;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   min-width: 320px;
 }
 .container {
@@ -126,7 +126,7 @@ button {
   display: flex;
   justify-content: space-between;
   height: 100%;
-  font-family: "SBAggroB";
+  font-family: 'yg-jalnan';
 }
 .nav ul > li {
   position: relative;
@@ -137,7 +137,7 @@ button {
 }
 .nav ul > li > a {
   font-weight: 600;
-  color: #000000;
+  color: #111;
   font-size: 2em;
   transition: color 0.2s;
 }
@@ -171,6 +171,10 @@ button {
     top: -5px;
     left: 20px;
   }
+  .nav ul{
+    position: relative;
+    right: 20px;
+  }
   .nav ul li a {
     position: relative;
     font-size: 1.7em;
@@ -186,13 +190,9 @@ button {
     width: 80%;
     top: -8px;
   }
-  .nav ul {
-    gap: 0 30px;
-  }
   .nav ul li a {
-    font-size: 1.3em;
+    font-size: 1.5em;
   }
-  
 }
 /* 푸터 */
 .footer {
@@ -274,10 +274,6 @@ button {
 .sub-banner .container.loaded .sub3-p::before {
   width: 210px;
 }
-
-
-
-
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .sub-banner .container p{
     font-size: 25px;
