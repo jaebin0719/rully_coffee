@@ -404,6 +404,9 @@
 }
 
 @media (max-width: 1024px) {
+  .menu-story{
+    height: 550px;
+  }
   .swiper-pagination-wrap .swiper-pagination-fraction {
     font-size: 14px;
   }
@@ -464,7 +467,7 @@
 @media (max-width: 768px) {
   .menu-story {
     margin: 0;
-    height: 1000px;
+    height: 700px;
   }
   .menu-story .container {
     margin-top: 0px;
@@ -555,10 +558,11 @@
     padding: 0;
   }
   .menu-story .tabpanel .swiper-container .swiper-slide img {
-    width: 100%;
-    height: auto;
+    width: 500px;
+    height: 500px;
     max-width: 100%;
     max-height: none;
+    margin: 20px 90px;
   }
   .menu-story .tabpanel .swiper-pagination-wrap {
     position: relative !important;
@@ -571,6 +575,9 @@
   }
   .tabpanel-body {
     height: 765px;
+  }
+  .menu-story .tabpanel .swiper-pagination-wrap{
+    display: none;
   }
 }
 /* 판매 */
@@ -589,6 +596,7 @@
   width: 440px;
   height: 550px;
   background-color: #f5f0f0;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 .sellcate span{
   padding-left: 25px;
@@ -602,6 +610,39 @@
 .sellcate img{
   margin-top: 25px;
   margin-left: 25px;
+}
+@media all and (max-width:1024px){
+  .sell{
+    height: 700px;
+  }
+  .sellcate{
+    width: 320px;
+    height: 450px;
+  }
+  .sellcate img{
+    width:280px;
+    height: 280px;
+    margin: 15px 20px;
+  }
+}
+@media all and (max-width:768px){
+  .sell{
+    height: 600px;
+  }
+  .sellcate{
+    width: 230px;
+    height: 350px;
+  }
+  .sellcate img{
+    width: 200px;
+    height: 200px;
+    margin: 15px 15px;
+  }
+  .sellcate span{
+    font-size: 16px;
+    line-height: 28px;
+    padding-left: 15px;
+  }
 }
 /* 이벤트 */
 .event {
@@ -640,7 +681,7 @@
     font-size: 60px;
     text-align: center;
     position: relative;
-    right: 50px;
+    padding: 50px 0 30px 0;
   }
   .event-banner img {
     position: relative;
@@ -818,12 +859,12 @@
     font-size: 60px;
     text-align: center;
     position: relative;
-    right: 50px;
+    padding: 50px 0 30px 0;
   }
   .store-img {
     width: 100%;
     position: relative;
-    right: 100px;
+    right: 105px;
   }
   .store-img .gm {
     width: 230px;

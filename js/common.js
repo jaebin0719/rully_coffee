@@ -21,10 +21,7 @@ $(document).ready(function(){
     $bottomBtn.onclick = () => {
       window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
     };
-
-    
   });
-})
 window.addEventListener("load",function(){
   // 페이지 로딩시 메인사진 글자에 밑줄 효과
     const imageOverlay = document.querySelector(".sub-banner .container");
