@@ -650,7 +650,8 @@
   height: 900px;
   margin: 0 auto;
   background-color: #f5f5f5;
-  background: url("../images/main_img/storeback.png");
+  background: url("../images/main_img/storeback.png") no-repeat;
+  background-size: cover;
 }
 .event-title {
   width: 100%;
