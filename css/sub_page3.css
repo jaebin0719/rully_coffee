@@ -53,6 +53,7 @@
   font-size: 48px;
   font-weight: bold;
   /* font-family: "Pretendard-Regular"; */
+
   font-family: 'yg-jalnan';
   padding-left: 20px;
 }
@@ -66,6 +67,7 @@
   left: 0px;
   top: 6px;
   border-radius: 3px;
+
 }
 .best-left {
   position: relative;

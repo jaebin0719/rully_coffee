@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
   AOS.init();
   // // 메뉴바 색
   // $(window).scroll(function () {
@@ -21,8 +21,6 @@ $(document).ready(function(){
     $bottomBtn.onclick = () => {
       window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
     };
-
-    
   });
 
 window.addEventListener("load",function(){
@@ -32,5 +30,4 @@ window.addEventListener("load",function(){
     setTimeout(function () {
       imageOverlay.classList.add("loaded");
     }, 300);
-})
-
+});
