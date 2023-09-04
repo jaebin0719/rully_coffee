@@ -241,7 +241,7 @@
 
 .swiper-pagination-wrap .swiper-button-prev.is-disable,
 .swiper-pagination-wrap .swiper-button-next.is-disable {
-  opacity: 0.3;
+  opacity: 0.2;
   pointer-events: none;
 }
 
