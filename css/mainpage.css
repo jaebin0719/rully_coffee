@@ -558,11 +558,11 @@
     padding: 0;
   }
   .menu-story .tabpanel .swiper-container .swiper-slide img {
-    width: 500px;
-    height: 500px;
+    width: 580px;
+    height: 580px;
     max-width: 100%;
     max-height: none;
-    margin: 20px 90px;
+    padding: 20px 0 0 100px;
   }
   .menu-story .tabpanel .swiper-pagination-wrap {
     position: relative !important;
@@ -666,7 +666,10 @@
 }
 @media all and (max-width: 1024px) {
   .event {
-    height: 600px;
+    height:650px;
+  }
+  .event-title{
+    padding: 50px 0 30px 0;
   }
   .event-banner img {
     width: 380px;
@@ -826,6 +829,12 @@
   cursor: pointer;
 }
 @media all and (max-width: 1024px) {
+  .store{
+    height: 600px;
+  }
+  .store-title{
+    padding: 50px 0 30px 0;
+  }
   .store-img .gm {
     width: 250px;
     height: 250px;
