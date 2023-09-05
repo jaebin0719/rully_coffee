@@ -21,7 +21,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 100px;
+  /* padding: 0 100px; */
 }
 .visslide1 {
   background-color: #123b37;
@@ -35,8 +35,8 @@
 .visual-txt {
   position: relative;
   display: block;
-  top: -40px;
-  left: 150px;
+  /* top: -40px; */
+  /* left: 150px; */
 }
 .visual-txt h1 {
   font-size: 0.9em;
@@ -52,25 +52,25 @@
   font-weight: 100;
 }
 .visual-txt a {
-  position: absolute;
+  /* position: absolute; */
+  padding: 10px;
   display: block;
   margin-top: 50px;
   width: 150px;
-  height: 26px;
+  /* height: 26px; */
   border: 1px solid #fff;
   border-radius: 5px;
   font-size: 0.5em;
   text-align: center;
 }
 .visimg {
-  width: 400px;
-  height: 400px;
+  width: 50%;
+  max-width: 400px;
+  /* height: 400px; */
   position: relative;
-  right: 100px;
 }
-.visevent {
-  width: 400px;
-  height: 400px;
+.visimg img {
+  width: 100%;
 }
 @media all and (max-width: 1024px) {
   .visual-txt {
@@ -90,29 +90,10 @@
     font-size: 0.6em;
     font-weight: 100;
   }
-  .visual-txt a {
-    position: absolute;
-    display: block;
-    margin-top: 50px;
-    width: 150px;
-    height: 30px;
-    line-height: 26px;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    font-size: 0.5em;
-    text-align: center;
-  }
-  .visimg {
-    width: 400px;
-    height: 400px;
-    position: relative;
-    right: 0;
-  }
 }
 @media all and (max-width: 768px) {
   .visual-txt {
     display: block;
-    width: 500px;
     left: 10px;
   }
   .visual-txt h1 {
@@ -128,30 +109,11 @@
     font-size: 0.5em;
     font-weight: 100;
   }
-  .visual-txt a {
-    position: absolute;
-    display: block;
-    margin-top: 50px;
-    width: 100px;
-    height: 30px;
-    line-height: 26px;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    font-size: 0.4em;
-    text-align: center;
-  }
-  .visimg {
-    position: relative;
-    top: 50px;
-  }
-  .visimg img {
-    width: 400px;
-    height: 300px;
-  }
 }
 /* 메뉴 */
 .menu-story {
-  height: 900px;
+  width: 100%;
+  padding-bottom: 100px;
 }
 .menu-story .container {
   margin-top: 100px;
@@ -265,11 +227,7 @@
 .swiper-pagination-wrap .swiper-pagination-fraction .swiper-pagination-current {
   color: #fff;
 }
-.menu-story {
-  width: 100%;
-  overflow: hidden;
-  padding-bottom: 100px;
-}
+
 .menu-story .main-title {
   position: relative;
   margin-top: 28px;
@@ -404,9 +362,6 @@
 }
 
 @media (max-width: 1024px) {
-  .menu-story{
-    height: 550px;
-  }
   .swiper-pagination-wrap .swiper-pagination-fraction {
     font-size: 14px;
   }
@@ -485,19 +440,16 @@
     text-align: center;
     font-size: 60px;
   }
-  .menu-story .tab {
-    text-align: center;
-    margin-left: 65px;
-  }
   .menu-story .main-subtitle {
     font-size: 16px;
   }
   .menu-story .tabs {
     overflow-x: auto;
     width: calc(100% + 64px);
-    /* margin: 0 -32px 30px; */
-    padding: 0 19px;
+    padding: 0 40px;
     white-space: nowrap;
+    text-align: center;
+    margin-left: 65px;
   }
   .menu-story .tabs > ul {
     flex-direction: row;
@@ -546,6 +498,9 @@
     height: auto;
     margin: 0;
   }
+  .menu-story .tabs .is-active .main-subtitle:after {
+    margin-top: 5px;
+  }
   .menu-story .tabpanel .swiper-container {
     height: auto;
   }
@@ -556,13 +511,14 @@
     width: 100% !important;
     height: 100% !important;
     padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .menu-story .tabpanel .swiper-container .swiper-slide img {
     width: 580px;
-    height: 580px;
     max-width: 100%;
     max-height: none;
-    padding: 20px 0 0 100px;
+    padding: 20px 0 0 75px;
   }
   .menu-story .tabpanel .swiper-pagination-wrap {
     position: relative !important;
@@ -576,14 +532,14 @@
   .tabpanel-body {
     height: 765px;
   }
-  .menu-story .tabpanel .swiper-pagination-wrap{
+  .menu-story .tabpanel .swiper-pagination-wrap {
     display: none;
   }
 }
 /* 판매 */
 .sell {
   width: 100%;
-  height: 900px;
+  margin: 110px 0;
 }
 .sell .container {
   display: flex;
@@ -591,15 +547,12 @@
   align-items: center;
 }
 .sellcate {
-  margin-top: 110px;
-  margin-bottom: 110px;
-  width: 440px;
-  height: 550px;
+  width: calc(95% / 3);
+  padding: 25px;
   background-color: #f5f0f0;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 .sellcate span {
-  padding-left: 25px;
   font-size: 20px;
   font-weight: 600;
   line-height: 40px;
@@ -608,37 +561,19 @@
   color: #7d7979;
 }
 .sellcate img {
-  margin-top: 25px;
-  margin-left: 25px;
+  width: 100%;
 }
-@media all and (max-width:1024px){
-  .sell{
-    height: 700px;
+@media all and (max-width: 768px) {
+  .sell .container {
+    flex-wrap: wrap;
+    gap: 20px 0;
+    justify-content: center;
   }
-  .sellcate{
-    width: 320px;
-    height: 450px;
+  .sellcate {
+    width: 100%;
+    max-width: 500px;
   }
-  .sellcate img{
-    width:280px;
-    height: 280px;
-    margin: 15px 20px;
-  }
-}
-@media all and (max-width:768px){
-  .sell{
-    height: 600px;
-  }
-  .sellcate{
-    width: 230px;
-    height: 350px;
-  }
-  .sellcate img{
-    width: 200px;
-    height: 200px;
-    margin: 15px 15px;
-  }
-  .sellcate span{
+  .sellcate span {
     font-size: 16px;
     line-height: 28px;
     padding-left: 15px;
@@ -647,7 +582,7 @@
 /* 이벤트 */
 .event {
   width: 100%;
-  height: 900px;
+  padding: 100px 0;
   margin: 0 auto;
   background-color: #f5f5f5;
   background: url("../images/main_img/storeback.png") no-repeat;
@@ -664,35 +599,24 @@
 .event-banner {
   display: flex;
   justify-content: space-between;
-  margin: 0 100px 0 100px;
+}
+.event-banner img {
+  width: 48%;
 }
 @media all and (max-width: 1024px) {
-  .event {
-    height:650px;
-  }
-  .event-title{
+  .event-title {
     padding: 50px 0 30px 0;
-  }
-  .event-banner img {
-    width: 380px;
-    height: 380px;
   }
 }
 @media all and (max-width: 768px) {
   .event {
-    height: 550px;
+    padding: 50px 0;
   }
   .event-title {
     font-size: 60px;
     text-align: center;
     position: relative;
     padding: 50px 0 30px 0;
-  }
-  .event-banner img {
-    position: relative;
-    right: 80px;
-    width: 350px;
-    height: 350px;
   }
   .event-banner img:first-child {
     padding-right: 20px;
@@ -701,9 +625,8 @@
 /* 스토어 */
 .store {
   width: 100%;
-  height: 900px;
+  padding-bottom: 100px;
   margin: 0 auto;
-  
 }
 .store-title {
   font-size: 96px;
@@ -715,191 +638,65 @@
 .store-img {
   display: flex;
   justify-content: space-between;
-  margin: 0 105px;
+}
+.store-img > div {
+  width: calc(98% / 3);
+  position: relative;
+  cursor: pointer;
+}
+.store-img > div::after {
+  content: "";
+  padding-bottom: 100%;
+  display: block;
 }
 .store-img .gm {
-  background: url("../images/main_img/load_view1.png") no-repeat;
-  width: 350px;
-  height: 350px;
-  cursor: pointer;
-}
-.gm-back {
-  position: absolute;
-  width: 350px;
-  height: 350px;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 1;
-  font-size: 36px;
-  font-weight: bold;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  opacity: 0;
-}
-.gm:hover .gm-back {
-  opacity: 1;
-  transition: all 0.3s;
-}
-.gm-back > p {
-  position: relative;
-  top: 35%;
-}
-.gm-back > p::after {
-  content: "";
-  width: 200%;
-  height: 2px;
-  background-color: #fff;
-  position: absolute;
-  display: block;
-  text-align: center;
-  left: -50px;
-  margin-top: 20px;
+  background: url("../images/main_img/load_view1.png") no-repeat center / cover;
 }
 .store-img .gc {
-  background: url("../images/main_img/load_view2.png") no-repeat;
-  width: 350px;
-  height: 350px;
-  cursor: pointer;
-}
-.gc:hover .gc-back {
-  opacity: 1;
-  transition: all 0.3s;
-}
-.gc-back {
-  position: absolute;
-  width: 350px;
-  height: 350px;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 1;
-  font-size: 36px;
-  font-weight: bold;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  opacity: 0;
-}
-.gc-back > p {
-  position: relative;
-  top: 35%;
-}
-.gc-back > p::after {
-  content: "";
-  width: 200%;
-  height: 2px;
-  background-color: #fff;
-  position: absolute;
-  display: block;
-  text-align: center;
-  left: -50px;
-  margin-top: 20px;
-}
-.gs-back {
-  position: absolute;
-  width: 350px;
-  height: 350px;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 1;
-  font-size: 36px;
-  font-weight: bold;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  opacity: 0;
-}
-.gs:hover .gs-back {
-  opacity: 1;
-  transition: all 0.3s;
-}
-.gs-back > p {
-  position: relative;
-  top: 35%;
-}
-.gs-back > p::after {
-  content: "";
-  width: 200%;
-  height: 2px;
-  background-color: #fff;
-  position: absolute;
-  display: block;
-  text-align: center;
-  left: -50px;
-  margin-top: 20px;
+  background: url("../images/main_img/load_view2.png") no-repeat center / cover;
 }
 .store-img .gs {
-  background: url("../images/main_img/load_view3.png") no-repeat;
-  width: 350px;
-  height: 350px;
-  cursor: pointer;
+  background: url("../images/main_img/load_view3.png") no-repeat center / cover;
+}
+.store-pic {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+}
+.store-img > div:hover .store-pic {
+  opacity: 1;
+  transition: all 0.3s;
+}
+.store-pic > p {
+  position: relative;
+  top: 35%;
+}
+.store-pic > p::after {
+  content: "";
+  width: 200%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  display: block;
+  text-align: center;
+  left: -50px;
+  margin-top: 20px;
 }
 @media all and (max-width: 1024px) {
-  .store{
-    height: 600px;
-  }
-  .store-title{
-    padding: 50px 0 30px 0;
-  }
-  .store-img .gm {
-    width: 250px;
-    height: 250px;
-  }
-  .store-img .gm-back {
-    width: 250px;
-    height: 250px;
-  }
-  .store-img .gc {
-    width: 250px;
-    height: 250px;
-  }
-  .store-img .gc-back {
-    width: 250px;
-    height: 250px;
-  }
-  .store-img .gs {
-    width: 250px;
-    height: 250px;
-  }
-  .store-img .gs-back {
-    width: 250px;
-    height: 250px;
-  }
 }
 @media all and (max-width: 768px) {
-  .store {
-    height: 500px;
-  }
   .store-title {
     font-size: 60px;
     text-align: center;
     position: relative;
     padding: 50px 0 30px 0;
-  }
-  .store-img {
-    width: 100%;
-    position: relative;
-    right: 105px;
-  }
-  .store-img .gm {
-    width: 230px;
-    height: 230px;
-  }
-  .store-img .gm-back {
-    width: 230px;
-    height: 230px;
-  }
-  .store-img .gc {
-    width: 230px;
-    height: 230px;
-  }
-  .store-img .gc-back {
-    width: 230px;
-    height: 230px;
-  }
-  .store-img .gs {
-    width: 230px;
-    height: 230px;
-  }
-  .store-img .gs-back {
-    width: 230px;
-    height: 230px;
   }
 }
