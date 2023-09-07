@@ -67,6 +67,7 @@ button {
   color: #fff;
   border-radius: 50px;
   cursor: pointer;
+  margin-bottom: 5px;
 }
 .side-up {
   width: 50px;

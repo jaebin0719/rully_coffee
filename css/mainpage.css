@@ -510,11 +510,6 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-  /* .menu-story .tabpanel .swiper-container .swiper-slide img {
-    width: auto;
-    max-width: 100%;
-    max-height: none;
-  } */
   .menu-story .tabpanel .swiper-pagination-wrap {
     position: relative !important;
     width: 100%;
